@@ -1,0 +1,37 @@
+body{
+    color: #404040  ;
+    font-size: 11pt;
+    font-family:  Georgia, Garamond;
+    background-image: url('./recipe_resources/images/silverware.jpg');
+    background-repeat: no-repeat;
+}
+
+h2{
+    color: #A4A400;
+    background-color: #F0F0F0 ;
+    text-decoration: underline;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+h3{
+    color: #A4A400;
+    background-color: #F0F0F0 ;
+    text-decoration: underline;
+    text-align: left;
+    font-weight: normal;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 18pt;
+}
+
+section{
+    background-color: #fdff9b;
+    width: 80%;
+    height: 20%;
+    align-self: center;
+    font-style: italic;
+}
+
+
