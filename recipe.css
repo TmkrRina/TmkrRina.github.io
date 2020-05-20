@@ -3,7 +3,7 @@ body{
     font-size: 11pt;
     font-family:  Georgia, Garamond;
     background-image: url('./recipe_resources/images/silverware.jpg');
-    background-repeat: no-repeat;
+    background-repeat:  repeat;
 }
 
 h2{
@@ -27,11 +27,26 @@ h3{
 }
 
 section{
-    background-color: #fdff9b;
+    background-color: #FFFFA8 ;
     width: 80%;
     height: 20%;
     align-self: center;
     font-style: italic;
 }
 
+p>aside{
+    text-decoration: line-through;
+}
 
+
+a {
+    color: #A4A400;
+}
+a:hover {
+    color: #FF00FF;
+    }
+
+pre{
+    font-family: monospace;
+    color: #343a40;
+}
