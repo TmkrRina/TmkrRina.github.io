@@ -51,3 +51,6 @@ pre{
     font-family: monospace;
     color: #343a40;
 }
+ul,ol {
+    list-style-image: url('./recipe_resources/images/pie_icon.gif');
+  }
