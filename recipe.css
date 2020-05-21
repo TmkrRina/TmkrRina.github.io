@@ -1,15 +1,15 @@
-body{
-    color: #404040  ;
+body {
+    color: #404040;
     font-size: 11pt;
-    font-family:  Georgia, Garamond;
+    font-family: Georgia, Garamond;
     background-image: url('./recipe_resources/images/silverware.jpg');
-    background-repeat:  repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
-h2{
+h2 {
     color: #A4A400;
-    background-color: #F0F0F0 ;
+    background-color: #F0F0F0;
     text-decoration: underline;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: center;
@@ -17,9 +17,9 @@ h2{
     font-size: 22pt;
 }
 
-h3{
+h3 {
     color: #A4A400;
-    background-color: #F0F0F0 ;
+    background-color: #F0F0F0;
     text-decoration: underline;
     text-align: left;
     font-weight: normal;
@@ -27,23 +27,23 @@ h3{
     font-size: 18pt;
 }
 
-.comments{
-   
+.comments {
+
     width: 80%;
     height: 20%;
     align-self: center;
     font-style: italic;
     list-style: none;
-    
+
 }
 
-.comments > li{
-    background-color: #FFFFA8 ;
+.comments > li {
+    background-color: #FFFFA8;
     padding: 10px;
     margin-bottom: 10px;
 }
 
-p>aside{
+p > aside {
     text-decoration: line-through;
 }
 
@@ -53,17 +53,18 @@ a {
 }
 a:hover {
     color: #FF00FF;
-    }
+}
 
-pre{
+pre {
     font-family: monospace;
     color: #343a40;
 }
-ul,ol {
+ul,
+ol {
     list-style-image: url('./recipe_resources/images/pie_icon.gif');
-  }
+}
 
-  .desc{
+.desc {
     list-style: none;
     padding: unset;
-  }
+}
