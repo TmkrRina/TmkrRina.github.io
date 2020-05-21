@@ -27,12 +27,20 @@ h3{
     font-size: 18pt;
 }
 
-section{
-    background-color: #FFFFA8 ;
+.comments{
+   
     width: 80%;
     height: 20%;
     align-self: center;
     font-style: italic;
+    list-style: none;
+    
+}
+
+.comments > li{
+    background-color: #FFFFA8 ;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 p>aside{
