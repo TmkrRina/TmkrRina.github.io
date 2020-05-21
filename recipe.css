@@ -4,6 +4,7 @@ body{
     font-family:  Georgia, Garamond;
     background-image: url('./recipe_resources/images/silverware.jpg');
     background-repeat:  repeat;
+    background-attachment: fixed;
 }
 
 h2{
