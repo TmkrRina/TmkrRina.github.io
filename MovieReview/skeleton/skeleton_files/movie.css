@@ -100,7 +100,7 @@ h1 {
     overflow: auto;
 }
 
-.col > #review >img{
+.col > .review >img{
     
         float: left;
         margin-right:5px;
