@@ -37,7 +37,7 @@ h1 {
 
 .container::after,
 .row::after,
-.clearfix {
+.clearfix::after {
     clear: both;
     display: table;
     content: "";
