@@ -1,0 +1,78 @@
+ body{
+     overflow: auto;
+ }
+ 
+ nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: maroon;
+    width: 20%;
+    height: 100%;
+    display: block;
+
+}
+
+a{
+    color: white;
+    display: block;
+
+}
+
+
+a:hover{
+    background-color: gray;
+}
+
+.form-div{
+    background-color: lightcyan;
+    width: 80%;
+    float: right;
+}
+
+.container::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+table{
+    width: 80%;
+    float:right;
+} 
+
+label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  input[type=text], input[type=tel]{
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+  }
+
+  input[type=submit]{
+      background-color: maroon;
+      color: white;
+      height: 40px;
+      width: 40%;
+      display: block;
+
+  }
+  tr:nth-child(even) {
+    background: gray;
+  }
+
+
+  caption{
+    caption-side: bottom;
+    font-weight: bold;
+    display: table-caption;
+    text-align: left;
+    
+  }
+
