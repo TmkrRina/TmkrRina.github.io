@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="asciii.css">
+    
+</head>
+
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer </h1>
+    <textarea name="text-box" id="text-box" cols="80" rows="20"></textarea>
+    <div class="wrapper">
+        <fieldset>
+            <legend>Play Controls: </legend>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </fieldset>
+        <fieldset>
+            <legend>Animation: </legend>
+            <select name="Animation_type" id="anim_type">
+                <option value="Blank">Blank</option>
+                <option value="Exercise">Exercise</option>
+                <option value="Juggler">Juggler</option>
+                <option value="Bike">Bike</option>
+                <option value="Dive">Dive</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Size: </legend>
+            <select name="Animation_size" id="anim_size" >
+                <option value="tiny">Tiny</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra Large</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed: </legend>
+            <input type="checkbox" id="speed">Turbo
+        </fieldset>
+    </div>
+    <div class="validator">
+        <a href="https://validator.w3.org/check/referer"><img src="w3c-html.png" alt="Valid HTML5"></a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="w3c-css.png" alt="Valid CSS"></a>
+        <!-- <a href="https://webster.cs.washington.edu/jslint/?referer">
+            <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+        </a> -->
+    </div>
+    <script src="animations.js"></script>
+    <script src="ascii.js"></script>
+    
+</body>
+
+
+</html>
