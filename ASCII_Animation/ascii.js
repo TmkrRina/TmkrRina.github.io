@@ -7,6 +7,7 @@
 var typeOne = [];
 let interval;
 let counter;
+var tSpeed =  250;
 
 var stop = document.getElementById("stop");
 stop.disabled = true;
@@ -25,7 +26,7 @@ selectedSizeElem.addEventListener("change", selectedSizeEventHandler)
 var textbox = document.getElementById("text-box");
 textbox.value = "";
 
-var speedElem = document.getElementById("speed");
+var speedElem = document.getElementById("turbo");
 speedElem.addEventListener("change", speedEventHandler);
 
 
@@ -57,37 +58,15 @@ function selectedSizeEventHandler() {
 }
 
 
-function speedEventHandler() {
-    counter = 0;
-    if (speedElem.checked = "true") {
 
-        interval = setInterval(function () {
-            textbox.value = typeOne[counter];
-            if (counter < typeOne.length - 1) {
-                counter++;
-            } else {
-                counter = 0;
-            }
-
-        }, 50);
-
-    }
-    else{ 
-        interval = setInterval(function () {
-           textbox.value = typeOne[counter];
-            if (counter < typeOne.length - 1) {
-                counter++;
-            } else {
-                counter = 0;
-            }
-
-        }, 250);
-        console.log("HEY");
-     }
-    }
-
-
-
+function animate(){
+    textbox.value = typeOne[counter];
+        if (counter < typeOne.length - 1) {
+            counter++;
+        } else {
+            counter = 0;
+        }
+}
 
 
 function startEventHandler() {
@@ -99,15 +78,7 @@ function startEventHandler() {
     typeOne = ANIMATIONS[selectedTypeElem.value].split("=====");
 
     counter = 0;
-    interval = setInterval(function () {
-        document.getElementById("text-box").value = typeOne[counter];
-        if (counter < typeOne.length - 1) {
-            counter++;
-        } else {
-            counter = 0;
-        }
-
-    }, 250);
+    interval = setInterval(animate, tSpeed);
 
 }
 
@@ -121,3 +92,10 @@ function stopEventHandler() {
     selectedTypeElem.disabled = false;
     textbox.value = ANIMATIONS[selectedTypeElem.value];
 }
+
+function speedEventHandler() {
+    
+    tSpeed = speedElem.checked ? 50 : 250;
+
+}
+
