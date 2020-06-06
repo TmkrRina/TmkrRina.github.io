@@ -1,0 +1,171 @@
+
+
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	font-size: 40pt;
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url(background.jpg);
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+}
+
+.puzzlepiece1{
+	top: 0;
+	left: 0;
+	background-position: 0px 0px;
+}
+
+.puzzlepiece2{
+	top: 0;
+	left: 100px;
+	background-position: -100px 0px;
+}
+
+.puzzlepiece3{
+	top: 0;
+	left: 200px;
+	background-position: -200px 0px;
+}
+
+.puzzlepiece4{
+	top: 0;
+	left: 300px;
+	background-position: -300px 0px;
+}
+
+.puzzlepiece5{
+	top: 100px;
+	left: 0px;
+	background-position: 0px -100px;
+}
+
+.puzzlepiece6{
+	top: 100px;
+	left: 100px;
+	background-position: -100px -100px;
+}
+
+.puzzlepiece7{
+	top: 100px;
+	left: 200px;
+	background-position: -200px -100px;
+}
+
+.puzzlepiece8{
+	top: 100px;
+	left: 300px;
+	background-position: -300px -100px;
+}
+
+.puzzlepiece9{
+	top: 200px;
+	left: 0px;
+	background-position: 0px -200px;
+}
+
+.puzzlepiece10{
+	top: 200px;
+	left: 100px;
+	background-position: -100px -200px;
+}
+
+.puzzlepiece11{
+	top: 200px;
+	left: 200px;
+	background-position: -200px -200px;
+}
+
+.puzzlepiece12{
+	top: 200px;
+	left: 300px;
+	background-position: -300px -200px;
+}
+
+.puzzlepiece13{
+	top: 300px;
+	left: 0px;
+	background-position: 0px -300px;
+}
+
+.puzzlepiece14{
+	top: 300px;
+	left: 100px;
+	background-position: -100px -300px;
+}
+
+.puzzlepiece15{
+	top: 300px;
+	left: 200px;
+	background-position: -200px -300px;
+}
+
+.puzzlepiece::after{
+	clear: both;
+	display: table;
+	content: "";
+}
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: red;
+}
+
+/* grading styles -- for TAs only; not required by students */
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+/*
+init = function() {
+    var puzzleArea = document.getElementById('puzzlearea');
+    var divs = puzzleArea.getElementsByTagName("div");
+      
+    // initialize each piece
+    for (var i=0; i< divs.length; i++) {
+        var div = divs[i];
+        
+        // calculate x and y for this piece
+        var x = ((i % 4) * 100) ;
+        var y = (Math.floor(i / 4) * 100) ;
+
+        // set basic style and background
+        div.className = "puzzlepiece";
+        div.style.left = x + 'px';
+        div.style.top = y + 'px';
+        div.style.backgroundImage = 'url("background.jpg")';
+        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
+        
+        // store x and y for later
+        div.x = x;
+        div.y = y; 
+    }        
+};
+*/
+
